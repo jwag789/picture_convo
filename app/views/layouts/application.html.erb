@@ -7,6 +7,18 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+	<nav>
+    <h2>PictureConvo</h2>
+    <ul>
+      <li><%= link_to 'Home', root_path %></li>
+      <% if session[:user_id] %>
+      <li> <%= link_to 'Logout', logout_path, method: :delete %></li>
+      <% else %>
+      <li><%= link_to 'Login', login_path %></li>
+      <li> <%= link_to 'Signup', signup_path %></li>
+      <% end %>
+    </ul>
+  </nav>
 
 <%= yield %>
 
