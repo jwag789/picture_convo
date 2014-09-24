@@ -4,7 +4,6 @@ class CreateMessages < ActiveRecord::Migration
       t.belongs_to :conversation
       t.belongs_to :user
       t.string :comment
-      t.string :picture
 
       t.timestamps
     end

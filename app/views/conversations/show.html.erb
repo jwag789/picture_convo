@@ -2,7 +2,7 @@
 
 <p>Create a new message!</p>
 
-<%= form_for([@conversation, @message]) do |f| %>
+<%= form_for([@conversation, @message], :html => {:multipart => true}) do |f| %>
 <% if @message.errors.any? %>
   <div id="error_explanation">
     <h2><%= pluralize(@message.errors.count, "error") %> prohibited
@@ -16,6 +16,11 @@
   <% end %>
 
   <p>
+  	<%= f.label :picture %><br>
+  	<%= f.file_field :picture %>
+  </p>
+
+  <p>
     <%= f.label :comment %><br>
     <%= f.text_field :comment %>
   </p>
@@ -26,6 +31,7 @@
 <% end %> 
 
 <% @conversation.messages.each do |message| %>
+	<%= image_tag message.picture_url.to_s %>
 	<%= message.comment %>
 	<br>
 <% end %>
