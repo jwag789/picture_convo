@@ -13002,3 +13002,3907 @@ Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-25 00:06:32 -04
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-25 00:06:32 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-25 00:48:13 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 593ms (Views: 583.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-25 00:48:13 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 88ms (Views: 87.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-09-25 00:48:13 -0400
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2014-09-25 00:48:13 -0400
+
+
+Started GET "/assets/general.css?body=1" for 127.0.0.1 at 2014-09-25 00:48:13 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-25 00:48:13 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-25 00:48:13 -0400
+
+
+Started GET "/assets/_color_variables.css?body=1" for 127.0.0.1 at 2014-09-25 00:48:13 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-25 00:48:13 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-25 00:48:13 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-25 00:48:13 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-25 00:48:13 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-25 00:48:13 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-25 00:48:13 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-25 00:48:13 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-25 00:48:13 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-25 00:48:13 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-25 00:51:33 -0400
+Processing by WelcomeController#index as HTML
+  [1m[35mMessage Load (0.7ms)[0m  SELECT "messages".* FROM "messages"
+  Rendered welcome/index.html.erb within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 24ms
+
+ActionView::Template::Error (undefined method `messages' for nil:NilClass):
+     6: <%= link_to "Create Conversation", new_conversation_path %>
+     7: <% end %>
+     8: 
+     9: <% @conversation.messages.each do |message| %>
+    10: 	<%= image_tag message.picture_url(:thumb).to_s %>
+    11: 	<%= message.comment %>
+    12: 	<br>
+  app/views/welcome/index.html.erb:9:in `_app_views_welcome_index_html_erb___1667894000129851783_70250396871620'
+
+
+  Rendered /Users/justinwagner/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/justinwagner/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.0ms)
+  Rendered /Users/justinwagner/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (16.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-25 00:51:54 -0400
+Processing by WelcomeController#index as HTML
+  [1m[36mMessage Load (0.3ms)[0m  [1mSELECT "messages".* FROM "messages"[0m
+  Rendered welcome/index.html.erb within layouts/application (1.1ms)
+Completed 500 Internal Server Error in 9ms
+
+SyntaxError (/Users/justinwagner/Documents/coding/picture_convo/app/views/welcome/index.html.erb:9: syntax error, unexpected keyword_do, expecting keyword_end
+'.freeze; @pictures do |picture| 
+                      ^
+/Users/justinwagner/Documents/coding/picture_convo/app/views/welcome/index.html.erb:16: syntax error, unexpected keyword_ensure, expecting end-of-input):
+  app/views/welcome/index.html.erb:9: syntax error, unexpected keyword_do, expecting keyword_end
+  app/views/welcome/index.html.erb:16: syntax error, unexpected keyword_ensure, expecting end-of-input
+
+
+  Rendered /Users/justinwagner/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /Users/justinwagner/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/justinwagner/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /Users/justinwagner/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (23.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-25 00:52:03 -0400
+Processing by WelcomeController#index as HTML
+  [1m[35mMessage Load (0.2ms)[0m  SELECT "messages".* FROM "messages"
+  Rendered welcome/index.html.erb within layouts/application (12.8ms)
+Completed 500 Internal Server Error in 18ms
+
+ActionView::Template::Error (undefined method `picture_url' for #<PictureUploader:0x007fc8e3c1a670>):
+     7: <% end %>
+     8: 
+     9: <% @pictures.each do |picture| %>
+    10: 	<%= image_tag picture.picture_url(:thumb).to_s %>
+    11: 	<%= picture.comment %>
+    12: 	<br>
+    13: <% end %>
+  app/views/welcome/index.html.erb:10:in `block in _app_views_welcome_index_html_erb___1667894000129851783_70250395737020'
+  app/views/welcome/index.html.erb:9:in `each'
+  app/views/welcome/index.html.erb:9:in `_app_views_welcome_index_html_erb___1667894000129851783_70250395737020'
+
+
+  Rendered /Users/justinwagner/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/justinwagner/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/justinwagner/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (16.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-25 00:53:29 -0400
+Processing by WelcomeController#index as HTML
+  [1m[36mMessage Load (0.4ms)[0m  [1mSELECT "messages".* FROM "messages"[0m
+  Rendered welcome/index.html.erb within layouts/application (17.6ms)
+Completed 200 OK in 158ms (Views: 152.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/general.css?body=1" for 127.0.0.1 at 2014-09-25 00:53:29 -0400
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2014-09-25 00:53:29 -0400
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-09-25 00:53:29 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-25 00:53:29 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-25 00:53:29 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-25 00:53:29 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-25 00:53:29 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-25 00:53:29 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-25 00:53:29 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-25 00:53:29 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-25 00:53:29 -0400
+
+
+Started GET "/assets/_color_variables.css?body=1" for 127.0.0.1 at 2014-09-25 00:53:29 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-25 00:53:29 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-25 00:53:29 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-25 00:53:29 -0400
+
+
+Started GET "/uploads/message/picture/1/thumb_zelda1.jpg" for 127.0.0.1 at 2014-09-25 00:53:29 -0400
+
+ActionController::RoutingError (No route matches [GET] "/uploads/message/picture/1/thumb_zelda1.jpg"):
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/justinwagner/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/justinwagner/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/justinwagner/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/justinwagner/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered /Users/justinwagner/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.7ms)
+  Rendered /Users/justinwagner/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (11.1ms)
+  Rendered /Users/justinwagner/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (61.0ms)
+
+
+Started GET "/uploads/message/picture/3/thumb_Escape_From_Tomorrow_poster.jpg" for 127.0.0.1 at 2014-09-25 00:53:30 -0400
+
+ActionController::RoutingError (No route matches [GET] "/uploads/message/picture/3/thumb_Escape_From_Tomorrow_poster.jpg"):
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/justinwagner/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/justinwagner/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/justinwagner/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/justinwagner/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/justinwagner/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.1ms)
+  Rendered /Users/justinwagner/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.3ms)
+  Rendered /Users/justinwagner/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (34.4ms)
+  [1m[36mUser Load (1.9ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35mConversation Load (0.3ms)[0m  SELECT "conversations".* FROM "conversations"
+  [1m[36mConversation Load (0.3ms)[0m  [1mSELECT  "conversations".* FROM "conversations"   ORDER BY "conversations"."id" ASC LIMIT 1[0m
+  [1m[35mSQL (2.1ms)[0m  DELETE FROM "conversations" WHERE "conversations"."id" = 1
+  [1m[36mConversation Load (8.3ms)[0m  [1mSELECT  "conversations".* FROM "conversations"   ORDER BY "conversations"."id" ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mDELETE FROM "conversations" WHERE "conversations"."id" = ?[0m  [["id", 2]]
+  [1m[35m (0.7ms)[0m  commit transaction
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-25 00:55:05 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  [1m[35mMessage Load (0.2ms)[0m  SELECT "messages".* FROM "messages"
+  Rendered welcome/index.html.erb within layouts/application (20.2ms)
+Completed 200 OK in 331ms (Views: 308.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/general.css?body=1" for 127.0.0.1 at 2014-09-25 00:55:06 -0400
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-09-25 00:55:06 -0400
+
+
+Started GET "/assets/_color_variables.css?body=1" for 127.0.0.1 at 2014-09-25 00:55:06 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-25 00:55:06 -0400
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2014-09-25 00:55:06 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-25 00:55:06 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-25 00:55:06 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-25 00:55:06 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-25 00:55:06 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-25 00:55:06 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-25 00:55:06 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-25 00:55:06 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-25 00:55:06 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-25 00:55:06 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-25 00:55:06 -0400
+
+
+Started GET "/uploads/message/picture/1/thumb_zelda1.jpg" for 127.0.0.1 at 2014-09-25 00:55:06 -0400
+
+ActionController::RoutingError (No route matches [GET] "/uploads/message/picture/1/thumb_zelda1.jpg"):
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/justinwagner/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/justinwagner/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/justinwagner/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/justinwagner/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (78.6ms)
+  Rendered /Users/justinwagner/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.5ms)
+  Rendered /Users/justinwagner/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (8.8ms)
+  Rendered /Users/justinwagner/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (155.4ms)
+
+
+Started GET "/uploads/message/picture/3/thumb_Escape_From_Tomorrow_poster.jpg" for 127.0.0.1 at 2014-09-25 00:55:06 -0400
+
+ActionController::RoutingError (No route matches [GET] "/uploads/message/picture/3/thumb_Escape_From_Tomorrow_poster.jpg"):
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/justinwagner/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/justinwagner/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/justinwagner/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/justinwagner/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/justinwagner/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.2ms)
+  Rendered /Users/justinwagner/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.8ms)
+  Rendered /Users/justinwagner/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (46.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-25 00:56:08 -0400
+Processing by WelcomeController#index as HTML
+  [1m[36mMessage Load (0.4ms)[0m  [1mSELECT "messages".* FROM "messages"[0m
+  Rendered welcome/index.html.erb within layouts/application (18.1ms)
+Completed 200 OK in 154ms (Views: 143.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/general.css?body=1" for 127.0.0.1 at 2014-09-25 00:56:08 -0400
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2014-09-25 00:56:08 -0400
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-09-25 00:56:08 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-25 00:56:08 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-25 00:56:08 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-25 00:56:08 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-25 00:56:08 -0400
+
+
+Started GET "/assets/_color_variables.css?body=1" for 127.0.0.1 at 2014-09-25 00:56:08 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-25 00:56:08 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-25 00:56:08 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-25 00:56:08 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-25 00:56:08 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-25 00:56:08 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-25 00:56:08 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-25 00:56:08 -0400
+
+
+Started GET "/uploads/message/picture/4/mini_Escape_From_Tomorrow_poster.jpg" for 127.0.0.1 at 2014-09-25 00:56:08 -0400
+
+ActionController::RoutingError (No route matches [GET] "/uploads/message/picture/4/mini_Escape_From_Tomorrow_poster.jpg"):
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/justinwagner/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/justinwagner/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/justinwagner/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/justinwagner/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/justinwagner/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.6ms)
+  Rendered /Users/justinwagner/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+  Rendered /Users/justinwagner/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (42.7ms)
+
+
+Started GET "/uploads/message/picture/3/mini_Escape_From_Tomorrow_poster.jpg" for 127.0.0.1 at 2014-09-25 00:56:08 -0400
+
+ActionController::RoutingError (No route matches [GET] "/uploads/message/picture/3/mini_Escape_From_Tomorrow_poster.jpg"):
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/justinwagner/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/justinwagner/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/justinwagner/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/justinwagner/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/justinwagner/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.8ms)
+  Rendered /Users/justinwagner/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.7ms)
+  Rendered /Users/justinwagner/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (39.4ms)
+
+
+Started GET "/uploads/message/picture/5/mini_zelda1.jpg" for 127.0.0.1 at 2014-09-25 00:56:08 -0400
+
+ActionController::RoutingError (No route matches [GET] "/uploads/message/picture/5/mini_zelda1.jpg"):
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/justinwagner/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/justinwagner/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/justinwagner/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/justinwagner/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/justinwagner/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.2ms)
+  Rendered /Users/justinwagner/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered /Users/justinwagner/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (41.9ms)
+
+
+Started GET "/uploads/message/picture/7/mini_Mickey-Mouse-HD-Wallpapers.jpg" for 127.0.0.1 at 2014-09-25 00:56:08 -0400
+
+ActionController::RoutingError (No route matches [GET] "/uploads/message/picture/7/mini_Mickey-Mouse-HD-Wallpapers.jpg"):
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/justinwagner/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/justinwagner/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/justinwagner/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/justinwagner/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/justinwagner/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.9ms)
+  Rendered /Users/justinwagner/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (5.5ms)
+  Rendered /Users/justinwagner/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (37.1ms)
+
+
+Started GET "/uploads/message/picture/8/mini_zelda1.jpg" for 127.0.0.1 at 2014-09-25 00:56:08 -0400
+
+ActionController::RoutingError (No route matches [GET] "/uploads/message/picture/8/mini_zelda1.jpg"):
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/justinwagner/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/justinwagner/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/justinwagner/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/justinwagner/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/justinwagner/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.0ms)
+  Rendered /Users/justinwagner/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+  Rendered /Users/justinwagner/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (93.8ms)
+
+
+Started GET "/uploads/message/picture/1/mini_zelda1.jpg" for 127.0.0.1 at 2014-09-25 00:56:09 -0400
+
+ActionController::RoutingError (No route matches [GET] "/uploads/message/picture/1/mini_zelda1.jpg"):
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/justinwagner/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/justinwagner/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/justinwagner/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/justinwagner/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/justinwagner/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.9ms)
+  Rendered /Users/justinwagner/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+  Rendered /Users/justinwagner/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (29.7ms)
+
+
+Started GET "/uploads/message/picture/10/mini_talespin.jpg" for 127.0.0.1 at 2014-09-25 00:56:09 -0400
+
+ActionController::RoutingError (No route matches [GET] "/uploads/message/picture/10/mini_talespin.jpg"):
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/justinwagner/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/justinwagner/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/justinwagner/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/justinwagner/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/justinwagner/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.5ms)
+  Rendered /Users/justinwagner/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /Users/justinwagner/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (30.7ms)
+
+
+Started GET "/uploads/message/picture/9/mini_Escape_From_Tomorrow_poster.jpg" for 127.0.0.1 at 2014-09-25 00:56:09 -0400
+
+ActionController::RoutingError (No route matches [GET] "/uploads/message/picture/9/mini_Escape_From_Tomorrow_poster.jpg"):
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/justinwagner/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/justinwagner/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/justinwagner/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/justinwagner/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/justinwagner/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.1ms)
+  Rendered /Users/justinwagner/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /Users/justinwagner/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (28.3ms)
+
+
+Started GET "/uploads/message/picture/11/mini_talespin.jpg" for 127.0.0.1 at 2014-09-25 00:56:09 -0400
+
+ActionController::RoutingError (No route matches [GET] "/uploads/message/picture/11/mini_talespin.jpg"):
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/justinwagner/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/justinwagner/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/justinwagner/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/justinwagner/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/justinwagner/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.3ms)
+  Rendered /Users/justinwagner/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /Users/justinwagner/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (28.7ms)
+  [1m[36m (1.8ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (0.6ms)[0m  select sqlite_version(*)
+  [1m[36m (1.0ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateUsers (20140923193722)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "email" varchar(255), "password_digest" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20140923193722"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+Migrating to CreateConversations (20140924183831)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "conversations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "title" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20140924183831"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+Migrating to CreateMessages (20140924183851)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "messages" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "conversation_id" integer, "user_id" integer, "comment" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20140924183851"]]
+  [1m[35m (1.5ms)[0m  commit transaction
+Migrating to AddPictureToMessages (20140924235805)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  ALTER TABLE "messages" ADD "picture" varchar(255)
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20140924235805"]]
+  [1m[35m (1.5ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-25 00:56:47 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  [1m[35mMessage Load (0.4ms)[0m  SELECT "messages".* FROM "messages"
+  Rendered welcome/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 268ms (Views: 243.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2014-09-25 00:56:48 -0400
+
+
+Started GET "/assets/general.css?body=1" for 127.0.0.1 at 2014-09-25 00:56:48 -0400
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-09-25 00:56:48 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-25 00:56:48 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-25 00:56:48 -0400
+
+
+Started GET "/assets/_color_variables.css?body=1" for 127.0.0.1 at 2014-09-25 00:56:48 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-25 00:56:48 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-25 00:56:48 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-25 00:56:48 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-25 00:56:48 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-25 00:56:48 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-25 00:56:48 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-25 00:56:48 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-25 00:56:48 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-25 00:56:48 -0400
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-09-25 00:56:49 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (83.3ms)
+Completed 200 OK in 168ms (Views: 157.3ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/signup" for 127.0.0.1 at 2014-09-25 00:56:58 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"H+sptRMKeS1uyTEr/0vy1MN3d8gn6qQ86J2DQxDx4Y0=", "user"=>{"username"=>"test", "email"=>"test@test.com", "password"=>"[FILTERED]"}, "commit"=>"Sign Up!"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.5ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = 'test@test.com' LIMIT 1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."username" = 'test' LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "users" ("created_at", "email", "password_digest", "updated_at", "username") VALUES (?, ?, ?, ?, ?)  [["created_at", "2014-09-25 04:56:58.808356"], ["email", "test@test.com"], ["password_digest", "$2a$10$uJxfdlcAmNj7bn3zTUfcT.EstY7cXTakoknOBluk3iK/yZwj7iQe2"], ["updated_at", "2014-09-25 04:56:58.808356"], ["username", "test"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 127ms (ActiveRecord: 2.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-25 00:56:58 -0400
+Processing by WelcomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mMessage Load (0.2ms)[0m  [1mSELECT "messages".* FROM "messages"[0m
+  Rendered welcome/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 135ms (Views: 131.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/general.css?body=1" for 127.0.0.1 at 2014-09-25 00:56:59 -0400
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2014-09-25 00:56:59 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-25 00:56:59 -0400
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-09-25 00:56:59 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-25 00:56:59 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-25 00:56:59 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-25 00:56:59 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-25 00:56:59 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-25 00:56:59 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-25 00:56:59 -0400
+
+
+Started GET "/assets/_color_variables.css?body=1" for 127.0.0.1 at 2014-09-25 00:56:59 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-25 00:56:59 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-25 00:56:59 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-25 00:56:59 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-25 00:56:59 -0400
+
+
+Started GET "/conversations/new" for 127.0.0.1 at 2014-09-25 00:57:01 -0400
+Processing by ConversationsController#new as HTML
+  Rendered conversations/_form.html.erb (6.4ms)
+  Rendered conversations/new.html.erb within layouts/application (16.7ms)
+Completed 200 OK in 160ms (Views: 155.1ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/conversations" for 127.0.0.1 at 2014-09-25 00:57:05 -0400
+Processing by ConversationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"H+sptRMKeS1uyTEr/0vy1MN3d8gn6qQ86J2DQxDx4Y0=", "conversation"=>{"title"=>"First convo"}, "commit"=>"Create Conversation"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "conversations" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", "2014-09-25 04:57:05.826149"], ["title", "First convo"], ["updated_at", "2014-09-25 04:57:05.826149"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+Redirected to http://127.0.0.1:3000/conversations/1
+Completed 302 Found in 5ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/conversations/1" for 127.0.0.1 at 2014-09-25 00:57:05 -0400
+Processing by ConversationsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mConversation Load (0.2ms)[0m  [1mSELECT  "conversations".* FROM "conversations"  WHERE "conversations"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mMessage Load (0.2ms)[0m  SELECT "messages".* FROM "messages"  WHERE "messages"."conversation_id" = ?  [["conversation_id", 1]]
+  Rendered conversations/show.html.erb within layouts/application (33.8ms)
+Completed 200 OK in 117ms (Views: 113.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/general.css?body=1" for 127.0.0.1 at 2014-09-25 00:57:06 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-25 00:57:06 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-25 00:57:06 -0400
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-09-25 00:57:06 -0400
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2014-09-25 00:57:06 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-25 00:57:06 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-25 00:57:06 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-25 00:57:06 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-25 00:57:06 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-25 00:57:06 -0400
+
+
+Started GET "/assets/_color_variables.css?body=1" for 127.0.0.1 at 2014-09-25 00:57:06 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-25 00:57:06 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-25 00:57:06 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-25 00:57:06 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-25 00:57:06 -0400
+
+
+Started POST "/conversations/1/messages" for 127.0.0.1 at 2014-09-25 00:57:43 -0400
+Processing by MessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"H+sptRMKeS1uyTEr/0vy1MN3d8gn6qQ86J2DQxDx4Y0=", "message"=>{"remote_picture_url"=>"http://puu.sh/bMWmY/1f368f7032.png", "comment"=>"Sublime is fun."}, "commit"=>"Create Message", "conversation_id"=>"1"}
+  [1m[36mConversation Load (0.1ms)[0m  [1mSELECT  "conversations".* FROM "conversations"  WHERE "conversations"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "messages" ("comment", "conversation_id", "created_at", "picture", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["comment", "Sublime is fun."], ["conversation_id", 1], ["created_at", "2014-09-25 04:57:43.590834"], ["picture", "Screen+Shot+2014-09-25+at+12.57.15+AM.png"], ["updated_at", "2014-09-25 04:57:43.590834"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+Redirected to http://127.0.0.1:3000/conversations/1
+Completed 302 Found in 470ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/conversations/1" for 127.0.0.1 at 2014-09-25 00:57:43 -0400
+Processing by ConversationsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mConversation Load (0.1ms)[0m  [1mSELECT  "conversations".* FROM "conversations"  WHERE "conversations"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mMessage Load (0.1ms)[0m  SELECT "messages".* FROM "messages"  WHERE "messages"."conversation_id" = ?  [["conversation_id", 1]]
+  Rendered conversations/show.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 107ms (Views: 104.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/_color_variables.css?body=1" for 127.0.0.1 at 2014-09-25 00:57:43 -0400
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2014-09-25 00:57:43 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-25 00:57:43 -0400
+
+
+Started GET "/assets/general.css?body=1" for 127.0.0.1 at 2014-09-25 00:57:43 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-25 00:57:43 -0400
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-09-25 00:57:43 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-25 00:57:43 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-25 00:57:43 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-25 00:57:43 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-25 00:57:43 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-25 00:57:43 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-25 00:57:43 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-25 00:57:43 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-25 00:57:43 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-25 00:57:43 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-25 00:57:54 -0400
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mMessage Load (0.4ms)[0m  SELECT "messages".* FROM "messages"
+  Rendered welcome/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 73ms (Views: 70.8ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2014-09-25 00:57:58 -0400
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"H+sptRMKeS1uyTEr/0vy1MN3d8gn6qQ86J2DQxDx4Y0="}
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-25 00:57:58 -0400
+Processing by WelcomeController#index as HTML
+  [1m[36mMessage Load (0.1ms)[0m  [1mSELECT "messages".* FROM "messages"[0m
+  Rendered welcome/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 82ms (Views: 81.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/general.css?body=1" for 127.0.0.1 at 2014-09-25 00:57:58 -0400
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2014-09-25 00:57:58 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-25 00:57:58 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-25 00:57:58 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-25 00:57:58 -0400
+
+
+Started GET "/assets/_color_variables.css?body=1" for 127.0.0.1 at 2014-09-25 00:57:58 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-25 00:57:58 -0400
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-09-25 00:57:58 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-25 00:57:58 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-25 00:57:58 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-25 00:57:58 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-25 00:57:58 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-25 00:57:58 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-25 00:57:58 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-25 00:57:58 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-25 00:58:14 -0400
+Processing by WelcomeController#index as HTML
+  [1m[35mMessage Load (0.3ms)[0m  SELECT "messages".* FROM "messages"
+  Rendered welcome/index.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 120ms (Views: 111.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2014-09-25 00:58:14 -0400
+
+
+Started GET "/assets/general.css?body=1" for 127.0.0.1 at 2014-09-25 00:58:14 -0400
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-09-25 00:58:14 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-25 00:58:14 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-25 00:58:14 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-25 00:58:14 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-25 00:58:14 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-25 00:58:14 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-25 00:58:14 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-25 00:58:14 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-25 00:58:14 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-25 00:58:14 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-25 00:58:14 -0400
+
+
+Started GET "/assets/_color_variables.css?body=1" for 127.0.0.1 at 2014-09-25 00:58:14 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-25 00:58:14 -0400
+
+
+Started GET "/login" for 127.0.0.1 at 2014-09-25 00:58:15 -0400
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 89ms (Views: 87.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2014-09-25 00:58:21 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7vYj1fXRbuyaVHxnEO3+VBTzlAs1I8Vz2OCgwOeVIOo=", "email"=>"test@test.com", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."email" = 'test@test.com' LIMIT 1[0m
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 113ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-25 00:58:21 -0400
+Processing by WelcomeController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mMessage Load (0.1ms)[0m  [1mSELECT "messages".* FROM "messages"[0m
+  Rendered welcome/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 142ms (Views: 140.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/general.css?body=1" for 127.0.0.1 at 2014-09-25 00:58:21 -0400
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2014-09-25 00:58:21 -0400
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-09-25 00:58:21 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-25 00:58:21 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-25 00:58:21 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-25 00:58:22 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-25 00:58:22 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-25 00:58:22 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-25 00:58:22 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-25 00:58:22 -0400
+
+
+Started GET "/assets/_color_variables.css?body=1" for 127.0.0.1 at 2014-09-25 00:58:22 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-25 00:58:22 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-25 00:58:22 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-25 00:58:22 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-25 00:58:22 -0400
+
+
+Started GET "/conversations/new" for 127.0.0.1 at 2014-09-25 00:58:24 -0400
+Processing by ConversationsController#new as HTML
+  Rendered conversations/_form.html.erb (7.5ms)
+  Rendered conversations/new.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 94ms (Views: 88.4ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/conversations" for 127.0.0.1 at 2014-09-25 00:58:26 -0400
+Processing by ConversationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7vYj1fXRbuyaVHxnEO3+VBTzlAs1I8Vz2OCgwOeVIOo=", "conversation"=>{"title"=>"ddw"}, "commit"=>"Create Conversation"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "conversations" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", "2014-09-25 04:58:26.588772"], ["title", "ddw"], ["updated_at", "2014-09-25 04:58:26.588772"]]
+  [1m[35m (1.0ms)[0m  commit transaction
+Redirected to http://127.0.0.1:3000/conversations/2
+Completed 302 Found in 8ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/conversations/2" for 127.0.0.1 at 2014-09-25 00:58:26 -0400
+Processing by ConversationsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mConversation Load (0.2ms)[0m  [1mSELECT  "conversations".* FROM "conversations"  WHERE "conversations"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mMessage Load (0.3ms)[0m  SELECT "messages".* FROM "messages"  WHERE "messages"."conversation_id" = ?  [["conversation_id", 2]]
+  Rendered conversations/show.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 151ms (Views: 148.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/general.css?body=1" for 127.0.0.1 at 2014-09-25 00:58:26 -0400
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2014-09-25 00:58:26 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-25 00:58:26 -0400
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-09-25 00:58:26 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-25 00:58:26 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-25 00:58:26 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-25 00:58:26 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-25 00:58:26 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-25 00:58:26 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-25 00:58:26 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-25 00:58:26 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-25 00:58:26 -0400
+
+
+Started GET "/assets/_color_variables.css?body=1" for 127.0.0.1 at 2014-09-25 00:58:26 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-25 00:58:26 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-25 00:58:26 -0400
+
+
+Started POST "/conversations/2/messages" for 127.0.0.1 at 2014-09-25 00:58:30 -0400
+Processing by MessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7vYj1fXRbuyaVHxnEO3+VBTzlAs1I8Vz2OCgwOeVIOo=", "message"=>{"remote_picture_url"=>"http://puu.sh/bMWmY/1f368f7032.png", "comment"=>""}, "commit"=>"Create Message", "conversation_id"=>"2"}
+  [1m[36mConversation Load (0.1ms)[0m  [1mSELECT  "conversations".* FROM "conversations"  WHERE "conversations"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "messages" ("comment", "conversation_id", "created_at", "picture", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["comment", ""], ["conversation_id", 2], ["created_at", "2014-09-25 04:58:30.804792"], ["picture", "Screen+Shot+2014-09-25+at+12.57.15+AM.png"], ["updated_at", "2014-09-25 04:58:30.804792"]]
+  [1m[35m (2.2ms)[0m  commit transaction
+Redirected to http://127.0.0.1:3000/conversations/2
+Completed 302 Found in 119ms (ActiveRecord: 2.7ms)
+
+
+Started GET "/conversations/2" for 127.0.0.1 at 2014-09-25 00:58:30 -0400
+Processing by ConversationsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mConversation Load (0.2ms)[0m  [1mSELECT  "conversations".* FROM "conversations"  WHERE "conversations"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mMessage Load (0.1ms)[0m  SELECT "messages".* FROM "messages"  WHERE "messages"."conversation_id" = ?  [["conversation_id", 2]]
+  Rendered conversations/show.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 163ms (Views: 157.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/general.css?body=1" for 127.0.0.1 at 2014-09-25 00:58:31 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-25 00:58:31 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-25 00:58:31 -0400
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2014-09-25 00:58:31 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-25 00:58:31 -0400
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-09-25 00:58:31 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-25 00:58:31 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-25 00:58:31 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-25 00:58:31 -0400
+
+
+Started GET "/assets/_color_variables.css?body=1" for 127.0.0.1 at 2014-09-25 00:58:31 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-25 00:58:31 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-25 00:58:31 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-25 00:58:31 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-25 00:58:31 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-25 00:58:31 -0400
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2014-09-25 00:58:33 -0400
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"7vYj1fXRbuyaVHxnEO3+VBTzlAs1I8Vz2OCgwOeVIOo="}
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-25 00:58:33 -0400
+Processing by WelcomeController#index as HTML
+  [1m[36mMessage Load (0.2ms)[0m  [1mSELECT "messages".* FROM "messages"[0m
+  Rendered welcome/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 82ms (Views: 80.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2014-09-25 00:58:34 -0400
+
+
+Started GET "/assets/general.css?body=1" for 127.0.0.1 at 2014-09-25 00:58:34 -0400
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-09-25 00:58:34 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-25 00:58:34 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-25 00:58:34 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-25 00:58:34 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-25 00:58:34 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-25 00:58:34 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-25 00:58:34 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-25 00:58:34 -0400
+
+
+Started GET "/assets/_color_variables.css?body=1" for 127.0.0.1 at 2014-09-25 00:58:34 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-25 00:58:34 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-25 00:58:34 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-25 00:58:34 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-25 00:58:34 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-25 00:59:17 -0400
+Processing by WelcomeController#index as HTML
+  [1m[35mMessage Load (0.1ms)[0m  SELECT  "messages".* FROM "messages"   ORDER BY "messages"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "messages" WHERE "messages"."id" = ?  [["id", 1]]
+  [1m[36m (9.2ms)[0m  [1mcommit transaction[0m
+  [1m[35mMessage Load (0.2ms)[0m  SELECT "messages".* FROM "messages"
+  Rendered welcome/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 122ms (Views: 97.3ms | ActiveRecord: 10.3ms)
+
+
+Started GET "/assets/general.css?body=1" for 127.0.0.1 at 2014-09-25 00:59:17 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-25 00:59:17 -0400
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2014-09-25 00:59:17 -0400
+
+
+Started GET "/assets/_color_variables.css?body=1" for 127.0.0.1 at 2014-09-25 00:59:17 -0400
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-09-25 00:59:17 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-25 00:59:17 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-25 00:59:17 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-25 00:59:17 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-25 00:59:17 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-25 00:59:17 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-25 00:59:17 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-25 00:59:17 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-25 00:59:17 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-25 00:59:17 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-25 00:59:26 -0400
+Processing by WelcomeController#index as HTML
+  [1m[36mMessage Load (0.3ms)[0m  [1mSELECT "messages".* FROM "messages"[0m
+  Rendered welcome/index.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 109ms (Views: 98.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/_color_variables.css?body=1" for 127.0.0.1 at 2014-09-25 00:59:26 -0400
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2014-09-25 00:59:26 -0400
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-09-25 00:59:26 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-25 00:59:26 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-25 00:59:26 -0400
+
+
+Started GET "/assets/general.css?body=1" for 127.0.0.1 at 2014-09-25 00:59:26 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-25 00:59:26 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-25 00:59:26 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-25 00:59:26 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-25 00:59:26 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-25 00:59:26 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-25 00:59:26 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-25 00:59:26 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-25 00:59:26 -0400
+
+
+Started GET "/login" for 127.0.0.1 at 2014-09-25 00:59:28 -0400
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 144ms (Views: 143.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2014-09-25 00:59:32 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZZGebcIbIoLE+NJ3ypaDPhSnFwgmyKniPJeCVY2kIrI=", "email"=>"test@test.com", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."email" = 'test@test.com' LIMIT 1
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 123ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-25 00:59:32 -0400
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mMessage Load (0.1ms)[0m  SELECT "messages".* FROM "messages"
+  Rendered welcome/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 98ms (Views: 92.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2014-09-25 00:59:32 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-25 00:59:32 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-25 00:59:32 -0400
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-09-25 00:59:32 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-25 00:59:32 -0400
+
+
+Started GET "/assets/general.css?body=1" for 127.0.0.1 at 2014-09-25 00:59:32 -0400
+
+
+Started GET "/assets/_color_variables.css?body=1" for 127.0.0.1 at 2014-09-25 00:59:32 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-25 00:59:32 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-25 00:59:32 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-25 00:59:32 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-25 00:59:32 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-25 00:59:32 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-25 00:59:32 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-25 00:59:32 -0400
+
+
+Started GET "/conversations/new" for 127.0.0.1 at 2014-09-25 00:59:34 -0400
+Processing by ConversationsController#new as HTML
+  Rendered conversations/_form.html.erb (8.1ms)
+  Rendered conversations/new.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 144ms (Views: 139.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/conversations" for 127.0.0.1 at 2014-09-25 00:59:36 -0400
+Processing by ConversationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZZGebcIbIoLE+NJ3ypaDPhSnFwgmyKniPJeCVY2kIrI=", "conversation"=>{"title"=>"dwdwqd"}, "commit"=>"Create Conversation"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "conversations" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-09-25 04:59:36.586412"], ["title", "dwdwqd"], ["updated_at", "2014-09-25 04:59:36.586412"]]
+  [1m[36m (8.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/conversations/3
+Completed 302 Found in 16ms (ActiveRecord: 9.6ms)
+
+
+Started GET "/conversations/3" for 127.0.0.1 at 2014-09-25 00:59:36 -0400
+Processing by ConversationsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mConversation Load (0.2ms)[0m  SELECT  "conversations".* FROM "conversations"  WHERE "conversations"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mMessage Load (0.2ms)[0m  [1mSELECT "messages".* FROM "messages"  WHERE "messages"."conversation_id" = ?[0m  [["conversation_id", 3]]
+  Rendered conversations/show.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 82ms (Views: 80.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/general.css?body=1" for 127.0.0.1 at 2014-09-25 00:59:36 -0400
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-09-25 00:59:36 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-25 00:59:36 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-25 00:59:36 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-25 00:59:36 -0400
+
+
+Started GET "/assets/_color_variables.css?body=1" for 127.0.0.1 at 2014-09-25 00:59:36 -0400
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2014-09-25 00:59:36 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-25 00:59:36 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-25 00:59:36 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-25 00:59:36 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-25 00:59:36 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-25 00:59:36 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-25 00:59:36 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-25 00:59:36 -0400
+
+
+Started POST "/conversations/3/messages" for 127.0.0.1 at 2014-09-25 00:59:41 -0400
+Processing by MessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZZGebcIbIoLE+NJ3ypaDPhSnFwgmyKniPJeCVY2kIrI=", "message"=>{"picture"=>#<ActionDispatch::Http::UploadedFile:0x007f80433512c0 @tempfile=#<Tempfile:/var/folders/rx/ghjwmmg56d1_fx_7k_sfhzsc0000gn/T/RackMultipart20140925-60962-yr6l4g>, @original_filename="talespin.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"message[picture]\"; filename=\"talespin.jpg\"\r\nContent-Type: image/jpeg\r\n">, "remote_picture_url"=>"", "comment"=>""}, "commit"=>"Create Message", "conversation_id"=>"3"}
+  [1m[35mConversation Load (0.1ms)[0m  SELECT  "conversations".* FROM "conversations"  WHERE "conversations"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "messages" ("comment", "conversation_id", "created_at", "picture", "updated_at") VALUES (?, ?, ?, ?, ?)  [["comment", ""], ["conversation_id", 3], ["created_at", "2014-09-25 04:59:41.730642"], ["picture", "talespin.jpg"], ["updated_at", "2014-09-25 04:59:41.730642"]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/conversations/3
+Completed 302 Found in 44ms (ActiveRecord: 1.8ms)
+
+
+Started GET "/conversations/3" for 127.0.0.1 at 2014-09-25 00:59:41 -0400
+Processing by ConversationsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mConversation Load (0.1ms)[0m  SELECT  "conversations".* FROM "conversations"  WHERE "conversations"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mMessage Load (0.1ms)[0m  [1mSELECT "messages".* FROM "messages"  WHERE "messages"."conversation_id" = ?[0m  [["conversation_id", 3]]
+  Rendered conversations/show.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 92ms (Views: 90.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/_color_variables.css?body=1" for 127.0.0.1 at 2014-09-25 00:59:41 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-25 00:59:41 -0400
+
+
+Started GET "/assets/general.css?body=1" for 127.0.0.1 at 2014-09-25 00:59:41 -0400
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-09-25 00:59:41 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-25 00:59:41 -0400
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2014-09-25 00:59:41 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-25 00:59:41 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-25 00:59:41 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-25 00:59:41 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-25 00:59:41 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-25 00:59:41 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-25 00:59:41 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-25 00:59:41 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-25 00:59:41 -0400
+
+
+Started POST "/conversations/3/messages" for 127.0.0.1 at 2014-09-25 00:59:50 -0400
+Processing by MessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZZGebcIbIoLE+NJ3ypaDPhSnFwgmyKniPJeCVY2kIrI=", "message"=>{"picture"=>#<ActionDispatch::Http::UploadedFile:0x007f80433cb070 @tempfile=#<Tempfile:/var/folders/rx/ghjwmmg56d1_fx_7k_sfhzsc0000gn/T/RackMultipart20140925-60962-clv3bs>, @original_filename="haha=) 003.JPG", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"message[picture]\"; filename=\"haha=) 003.JPG\"\r\nContent-Type: image/jpeg\r\n">, "remote_picture_url"=>"", "comment"=>""}, "commit"=>"Create Message", "conversation_id"=>"3"}
+  [1m[35mConversation Load (0.7ms)[0m  SELECT  "conversations".* FROM "conversations"  WHERE "conversations"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "messages" ("comment", "conversation_id", "created_at", "picture", "updated_at") VALUES (?, ?, ?, ?, ?)  [["comment", ""], ["conversation_id", 3], ["created_at", "2014-09-25 04:59:52.984174"], ["picture", "haha___003.JPG"], ["updated_at", "2014-09-25 04:59:52.984174"]]
+  [1m[36m (29.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/conversations/3
+Completed 302 Found in 2323ms (ActiveRecord: 31.0ms)
+
+
+Started GET "/conversations/3" for 127.0.0.1 at 2014-09-25 00:59:53 -0400
+Processing by ConversationsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mConversation Load (0.2ms)[0m  SELECT  "conversations".* FROM "conversations"  WHERE "conversations"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mMessage Load (0.2ms)[0m  [1mSELECT "messages".* FROM "messages"  WHERE "messages"."conversation_id" = ?[0m  [["conversation_id", 3]]
+  Rendered conversations/show.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 227ms (Views: 224.8ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/conversations/3/messages" for 127.0.0.1 at 2014-09-25 00:59:53 -0400
+Processing by MessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZZGebcIbIoLE+NJ3ypaDPhSnFwgmyKniPJeCVY2kIrI=", "message"=>{"picture"=>#<ActionDispatch::Http::UploadedFile:0x007f8043369cd0 @tempfile=#<Tempfile:/var/folders/rx/ghjwmmg56d1_fx_7k_sfhzsc0000gn/T/RackMultipart20140925-60962-1s4195p>, @original_filename="haha=) 003.JPG", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"message[picture]\"; filename=\"haha=) 003.JPG\"\r\nContent-Type: image/jpeg\r\n">, "remote_picture_url"=>"", "comment"=>""}, "commit"=>"Create Message", "conversation_id"=>"3"}
+  [1m[35mConversation Load (0.2ms)[0m  SELECT  "conversations".* FROM "conversations"  WHERE "conversations"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "messages" ("comment", "conversation_id", "created_at", "picture", "updated_at") VALUES (?, ?, ?, ?, ?)  [["comment", ""], ["conversation_id", 3], ["created_at", "2014-09-25 04:59:55.486819"], ["picture", "haha___003.JPG"], ["updated_at", "2014-09-25 04:59:55.486819"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/conversations/3
+Completed 302 Found in 2121ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/conversations/3" for 127.0.0.1 at 2014-09-25 00:59:55 -0400
+Processing by ConversationsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mConversation Load (0.1ms)[0m  SELECT  "conversations".* FROM "conversations"  WHERE "conversations"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mMessage Load (0.2ms)[0m  [1mSELECT "messages".* FROM "messages"  WHERE "messages"."conversation_id" = ?[0m  [["conversation_id", 3]]
+  Rendered conversations/show.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 91ms (Views: 86.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/general.css?body=1" for 127.0.0.1 at 2014-09-25 00:59:55 -0400
+
+
+Started GET "/assets/_color_variables.css?body=1" for 127.0.0.1 at 2014-09-25 00:59:55 -0400
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-09-25 00:59:55 -0400
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2014-09-25 00:59:55 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-25 00:59:55 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-25 00:59:55 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-25 00:59:55 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-25 00:59:55 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-25 00:59:55 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-25 00:59:55 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-25 00:59:55 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-25 00:59:55 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-25 00:59:55 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-25 00:59:55 -0400
+
+
+Started POST "/conversations/3/messages" for 127.0.0.1 at 2014-09-25 01:00:12 -0400
+Processing by MessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZZGebcIbIoLE+NJ3ypaDPhSnFwgmyKniPJeCVY2kIrI=", "message"=>{"picture"=>#<ActionDispatch::Http::UploadedFile:0x007f80434037b8 @tempfile=#<Tempfile:/var/folders/rx/ghjwmmg56d1_fx_7k_sfhzsc0000gn/T/RackMultipart20140925-60962-roq8y3>, @original_filename="castle2.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"message[picture]\"; filename=\"castle2.jpg\"\r\nContent-Type: image/jpeg\r\n">, "remote_picture_url"=>"", "comment"=>""}, "commit"=>"Create Message", "conversation_id"=>"3"}
+  [1m[35mConversation Load (0.1ms)[0m  SELECT  "conversations".* FROM "conversations"  WHERE "conversations"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "messages" ("comment", "conversation_id", "created_at", "picture", "updated_at") VALUES (?, ?, ?, ?, ?)  [["comment", ""], ["conversation_id", 3], ["created_at", "2014-09-25 05:00:12.132275"], ["picture", "castle2.jpg"], ["updated_at", "2014-09-25 05:00:12.132275"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/conversations/3
+Completed 302 Found in 60ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/conversations/3" for 127.0.0.1 at 2014-09-25 01:00:12 -0400
+Processing by ConversationsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mConversation Load (0.1ms)[0m  SELECT  "conversations".* FROM "conversations"  WHERE "conversations"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mMessage Load (0.1ms)[0m  [1mSELECT "messages".* FROM "messages"  WHERE "messages"."conversation_id" = ?[0m  [["conversation_id", 3]]
+  Rendered conversations/show.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 82ms (Views: 80.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/_color_variables.css?body=1" for 127.0.0.1 at 2014-09-25 01:00:12 -0400
+
+
+Started GET "/assets/general.css?body=1" for 127.0.0.1 at 2014-09-25 01:00:12 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-25 01:00:12 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-25 01:00:12 -0400
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2014-09-25 01:00:12 -0400
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-09-25 01:00:12 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-25 01:00:12 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-25 01:00:12 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-25 01:00:12 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-25 01:00:12 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-25 01:00:12 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-25 01:00:12 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-25 01:00:12 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-25 01:00:12 -0400
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2014-09-25 01:00:19 -0400
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"ZZGebcIbIoLE+NJ3ypaDPhSnFwgmyKniPJeCVY2kIrI="}
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-25 01:00:19 -0400
+Processing by WelcomeController#index as HTML
+  [1m[35mMessage Load (0.1ms)[0m  SELECT "messages".* FROM "messages"
+  Rendered welcome/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 160ms (Views: 158.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/general.css?body=1" for 127.0.0.1 at 2014-09-25 01:00:19 -0400
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2014-09-25 01:00:19 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-25 01:00:19 -0400
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-09-25 01:00:19 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-25 01:00:19 -0400
+
+
+Started GET "/assets/_color_variables.css?body=1" for 127.0.0.1 at 2014-09-25 01:00:19 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-25 01:00:19 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-25 01:00:19 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-25 01:00:19 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-25 01:00:19 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-25 01:00:19 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-25 01:00:19 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-25 01:00:19 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-25 01:00:19 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-25 01:01:21 -0400
+Processing by WelcomeController#index as HTML
+  [1m[36mMessage Load (0.4ms)[0m  [1mSELECT "messages".* FROM "messages"[0m
+  Rendered welcome/index.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 101ms (Views: 89.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/general.css?body=1" for 127.0.0.1 at 2014-09-25 01:01:21 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-25 01:01:21 -0400
+
+
+Started GET "/assets/_color_variables.css?body=1" for 127.0.0.1 at 2014-09-25 01:01:21 -0400
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2014-09-25 01:01:21 -0400
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-09-25 01:01:21 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-25 01:01:21 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-25 01:01:21 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-25 01:01:21 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-25 01:01:21 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-25 01:01:21 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-25 01:01:21 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-25 01:01:21 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-25 01:01:21 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-25 01:01:21 -0400
+  [1m[36m (1.3ms)[0m  [1mCREATE TABLE "conversations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "title" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (1.2ms)[0m  CREATE TABLE "messages" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "conversation_id" integer, "user_id" integer, "comment" varchar(255), "created_at" datetime, "updated_at" datetime, "picture" varchar(255)) 
+  [1m[36m (1.0ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "email" varchar(255), "password_digest" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (2.0ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (1.2ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.2ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.8ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140924235805')
+  [1m[36m (1.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20140923193722')[0m
+  [1m[35m (1.0ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140924183831')
+  [1m[36m (1.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20140924183851')[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-25 01:01:42 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  [1m[35mMessage Load (0.3ms)[0m  SELECT "messages".* FROM "messages"
+  Rendered welcome/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 315ms (Views: 234.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-09-25 01:01:43 -0400
+
+
+Started GET "/assets/general.css?body=1" for 127.0.0.1 at 2014-09-25 01:01:43 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-25 01:01:43 -0400
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2014-09-25 01:01:43 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-25 01:01:43 -0400
+
+
+Started GET "/assets/_color_variables.css?body=1" for 127.0.0.1 at 2014-09-25 01:01:43 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-25 01:01:43 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-25 01:01:43 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-25 01:01:43 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-25 01:01:43 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-25 01:01:43 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-25 01:01:43 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-25 01:01:43 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-25 01:01:43 -0400
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-09-25 01:01:48 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (78.9ms)
+Completed 200 OK in 167ms (Views: 154.8ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/signup" for 127.0.0.1 at 2014-09-25 01:01:54 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"j60rwI7GgQyL6PIBwO4Qh2oPZmhgIUVW4M/WC5c3MSI=", "user"=>{"username"=>"test", "email"=>"test@test.com", "password"=>"[FILTERED]"}, "commit"=>"Sign Up!"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = 'test@test.com' LIMIT 1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."username" = 'test' LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "users" ("created_at", "email", "password_digest", "updated_at", "username") VALUES (?, ?, ?, ?, ?)  [["created_at", "2014-09-25 05:01:54.154059"], ["email", "test@test.com"], ["password_digest", "$2a$10$ig1HsBnyciNCtbQlckucS.pdJPx8YIwIPreK.HEaZHHvvEVseZ/H6"], ["updated_at", "2014-09-25 05:01:54.154059"], ["username", "test"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 132ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-25 01:01:54 -0400
+Processing by WelcomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mMessage Load (0.2ms)[0m  [1mSELECT "messages".* FROM "messages"[0m
+  Rendered welcome/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 157ms (Views: 154.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/_color_variables.css?body=1" for 127.0.0.1 at 2014-09-25 01:01:54 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-25 01:01:54 -0400
+
+
+Started GET "/assets/general.css?body=1" for 127.0.0.1 at 2014-09-25 01:01:54 -0400
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-09-25 01:01:54 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-25 01:01:54 -0400
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2014-09-25 01:01:54 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-25 01:01:54 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-25 01:01:54 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-25 01:01:54 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-25 01:01:54 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-25 01:01:54 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-25 01:01:54 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-25 01:01:54 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-25 01:01:54 -0400
+
+
+Started GET "/conversations/new" for 127.0.0.1 at 2014-09-25 01:01:55 -0400
+Processing by ConversationsController#new as HTML
+  Rendered conversations/_form.html.erb (5.7ms)
+  Rendered conversations/new.html.erb within layouts/application (14.5ms)
+Completed 200 OK in 157ms (Views: 151.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/conversations" for 127.0.0.1 at 2014-09-25 01:01:57 -0400
+Processing by ConversationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"j60rwI7GgQyL6PIBwO4Qh2oPZmhgIUVW4M/WC5c3MSI=", "conversation"=>{"title"=>"dwwd"}, "commit"=>"Create Conversation"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "conversations" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", "2014-09-25 05:01:57.833232"], ["title", "dwwd"], ["updated_at", "2014-09-25 05:01:57.833232"]]
+  [1m[35m (7.9ms)[0m  commit transaction
+Redirected to http://127.0.0.1:3000/conversations/1
+Completed 302 Found in 12ms (ActiveRecord: 8.5ms)
+
+
+Started GET "/conversations/1" for 127.0.0.1 at 2014-09-25 01:01:57 -0400
+Processing by ConversationsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mConversation Load (0.3ms)[0m  [1mSELECT  "conversations".* FROM "conversations"  WHERE "conversations"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mMessage Load (0.2ms)[0m  SELECT "messages".* FROM "messages"  WHERE "messages"."conversation_id" = ?  [["conversation_id", 1]]
+  Rendered conversations/show.html.erb within layouts/application (32.1ms)
+Completed 200 OK in 114ms (Views: 110.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/_color_variables.css?body=1" for 127.0.0.1 at 2014-09-25 01:01:57 -0400
+
+
+Started GET "/assets/general.css?body=1" for 127.0.0.1 at 2014-09-25 01:01:58 -0400
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2014-09-25 01:01:58 -0400
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-09-25 01:01:58 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-25 01:01:58 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-25 01:01:58 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-25 01:01:58 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-25 01:01:58 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-25 01:01:58 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-25 01:01:58 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-25 01:01:58 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-25 01:01:58 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-25 01:01:58 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-25 01:01:58 -0400
+
+
+Started POST "/conversations/1/messages" for 127.0.0.1 at 2014-09-25 01:02:02 -0400
+Processing by MessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"j60rwI7GgQyL6PIBwO4Qh2oPZmhgIUVW4M/WC5c3MSI=", "message"=>{"picture"=>#<ActionDispatch::Http::UploadedFile:0x007fdbdb914e70 @tempfile=#<Tempfile:/var/folders/rx/ghjwmmg56d1_fx_7k_sfhzsc0000gn/T/RackMultipart20140925-60998-1mykdsc>, @original_filename="castle2.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"message[picture]\"; filename=\"castle2.jpg\"\r\nContent-Type: image/jpeg\r\n">, "remote_picture_url"=>"", "comment"=>""}, "commit"=>"Create Message", "conversation_id"=>"1"}
+  [1m[36mConversation Load (0.1ms)[0m  [1mSELECT  "conversations".* FROM "conversations"  WHERE "conversations"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "messages" ("comment", "conversation_id", "created_at", "picture", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["comment", ""], ["conversation_id", 1], ["created_at", "2014-09-25 05:02:02.693463"], ["picture", "castle2.jpg"], ["updated_at", "2014-09-25 05:02:02.693463"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+Redirected to http://127.0.0.1:3000/conversations/1
+Completed 302 Found in 63ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/conversations/1" for 127.0.0.1 at 2014-09-25 01:02:02 -0400
+Processing by ConversationsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mConversation Load (0.1ms)[0m  [1mSELECT  "conversations".* FROM "conversations"  WHERE "conversations"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mMessage Load (0.1ms)[0m  SELECT "messages".* FROM "messages"  WHERE "messages"."conversation_id" = ?  [["conversation_id", 1]]
+  Rendered conversations/show.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 86ms (Views: 84.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2014-09-25 01:02:02 -0400
+
+
+Started GET "/assets/general.css?body=1" for 127.0.0.1 at 2014-09-25 01:02:02 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-25 01:02:02 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-25 01:02:02 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-25 01:02:02 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-25 01:02:02 -0400
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-09-25 01:02:02 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-25 01:02:02 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-25 01:02:02 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-25 01:02:02 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-25 01:02:02 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-25 01:02:02 -0400
+
+
+Started GET "/assets/_color_variables.css?body=1" for 127.0.0.1 at 2014-09-25 01:02:02 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-25 01:02:02 -0400
+
+
+Started POST "/conversations/1/messages" for 127.0.0.1 at 2014-09-25 01:02:07 -0400
+Processing by MessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"j60rwI7GgQyL6PIBwO4Qh2oPZmhgIUVW4M/WC5c3MSI=", "message"=>{"picture"=>#<ActionDispatch::Http::UploadedFile:0x007fdbdba50c08 @tempfile=#<Tempfile:/var/folders/rx/ghjwmmg56d1_fx_7k_sfhzsc0000gn/T/RackMultipart20140925-60998-dfkir>, @original_filename="bioshock.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"message[picture]\"; filename=\"bioshock.jpg\"\r\nContent-Type: image/jpeg\r\n">, "remote_picture_url"=>"", "comment"=>""}, "commit"=>"Create Message", "conversation_id"=>"1"}
+  [1m[36mConversation Load (0.2ms)[0m  [1mSELECT  "conversations".* FROM "conversations"  WHERE "conversations"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "messages" ("comment", "conversation_id", "created_at", "picture", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["comment", ""], ["conversation_id", 1], ["created_at", "2014-09-25 05:02:07.247154"], ["picture", "bioshock.jpg"], ["updated_at", "2014-09-25 05:02:07.247154"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+Redirected to http://127.0.0.1:3000/conversations/1
+Completed 302 Found in 84ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/conversations/1" for 127.0.0.1 at 2014-09-25 01:02:07 -0400
+Processing by ConversationsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mConversation Load (0.2ms)[0m  [1mSELECT  "conversations".* FROM "conversations"  WHERE "conversations"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mMessage Load (0.2ms)[0m  SELECT "messages".* FROM "messages"  WHERE "messages"."conversation_id" = ?  [["conversation_id", 1]]
+  Rendered conversations/show.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 145ms (Views: 143.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/general.css?body=1" for 127.0.0.1 at 2014-09-25 01:02:07 -0400
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2014-09-25 01:02:07 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-25 01:02:07 -0400
+
+
+Started GET "/assets/_color_variables.css?body=1" for 127.0.0.1 at 2014-09-25 01:02:07 -0400
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-09-25 01:02:07 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-25 01:02:07 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-25 01:02:07 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-25 01:02:07 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-25 01:02:07 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-25 01:02:07 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-25 01:02:07 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-25 01:02:07 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-25 01:02:07 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-25 01:02:07 -0400
+
+
+Started POST "/conversations/1/messages" for 127.0.0.1 at 2014-09-25 01:02:12 -0400
+Processing by MessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"j60rwI7GgQyL6PIBwO4Qh2oPZmhgIUVW4M/WC5c3MSI=", "message"=>{"picture"=>#<ActionDispatch::Http::UploadedFile:0x007fdbdc30ce50 @tempfile=#<Tempfile:/var/folders/rx/ghjwmmg56d1_fx_7k_sfhzsc0000gn/T/RackMultipart20140925-60998-1o8op0q>, @original_filename="illust.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"message[picture]\"; filename=\"illust.jpg\"\r\nContent-Type: image/jpeg\r\n">, "remote_picture_url"=>"", "comment"=>""}, "commit"=>"Create Message", "conversation_id"=>"1"}
+  [1m[36mConversation Load (0.2ms)[0m  [1mSELECT  "conversations".* FROM "conversations"  WHERE "conversations"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "messages" ("comment", "conversation_id", "created_at", "picture", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["comment", ""], ["conversation_id", 1], ["created_at", "2014-09-25 05:02:12.618545"], ["picture", "illust.jpg"], ["updated_at", "2014-09-25 05:02:12.618545"]]
+  [1m[35m (1.2ms)[0m  commit transaction
+Redirected to http://127.0.0.1:3000/conversations/1
+Completed 302 Found in 81ms (ActiveRecord: 1.8ms)
+
+
+Started GET "/conversations/1" for 127.0.0.1 at 2014-09-25 01:02:12 -0400
+Processing by ConversationsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mConversation Load (0.2ms)[0m  [1mSELECT  "conversations".* FROM "conversations"  WHERE "conversations"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mMessage Load (0.2ms)[0m  SELECT "messages".* FROM "messages"  WHERE "messages"."conversation_id" = ?  [["conversation_id", 1]]
+  Rendered conversations/show.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 149ms (Views: 146.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/_color_variables.css?body=1" for 127.0.0.1 at 2014-09-25 01:02:12 -0400
+
+
+Started GET "/assets/general.css?body=1" for 127.0.0.1 at 2014-09-25 01:02:12 -0400
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2014-09-25 01:02:12 -0400
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-09-25 01:02:12 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-25 01:02:12 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-25 01:02:12 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-25 01:02:12 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-25 01:02:12 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-25 01:02:12 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-25 01:02:12 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-25 01:02:12 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-25 01:02:12 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-25 01:02:12 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-25 01:02:12 -0400
+
+
+Started POST "/conversations/1/messages" for 127.0.0.1 at 2014-09-25 01:02:18 -0400
+Processing by MessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"j60rwI7GgQyL6PIBwO4Qh2oPZmhgIUVW4M/WC5c3MSI=", "message"=>{"picture"=>#<ActionDispatch::Http::UploadedFile:0x007fdbdedb9d88 @tempfile=#<Tempfile:/var/folders/rx/ghjwmmg56d1_fx_7k_sfhzsc0000gn/T/RackMultipart20140925-60998-baxpjo>, @original_filename="pacman.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"message[picture]\"; filename=\"pacman.jpg\"\r\nContent-Type: image/jpeg\r\n">, "remote_picture_url"=>"", "comment"=>""}, "commit"=>"Create Message", "conversation_id"=>"1"}
+  [1m[36mConversation Load (0.1ms)[0m  [1mSELECT  "conversations".* FROM "conversations"  WHERE "conversations"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "messages" ("comment", "conversation_id", "created_at", "picture", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["comment", ""], ["conversation_id", 1], ["created_at", "2014-09-25 05:02:18.631145"], ["picture", "pacman.jpg"], ["updated_at", "2014-09-25 05:02:18.631145"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+Redirected to http://127.0.0.1:3000/conversations/1
+Completed 302 Found in 99ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/conversations/1" for 127.0.0.1 at 2014-09-25 01:02:18 -0400
+Processing by ConversationsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mConversation Load (0.2ms)[0m  [1mSELECT  "conversations".* FROM "conversations"  WHERE "conversations"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mMessage Load (0.1ms)[0m  SELECT "messages".* FROM "messages"  WHERE "messages"."conversation_id" = ?  [["conversation_id", 1]]
+  Rendered conversations/show.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 165ms (Views: 162.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-25 01:02:18 -0400
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2014-09-25 01:02:18 -0400
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-09-25 01:02:18 -0400
+
+
+Started GET "/assets/general.css?body=1" for 127.0.0.1 at 2014-09-25 01:02:18 -0400
+
+
+Started GET "/assets/_color_variables.css?body=1" for 127.0.0.1 at 2014-09-25 01:02:18 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-25 01:02:18 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-25 01:02:18 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-25 01:02:18 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-25 01:02:18 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-25 01:02:18 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-25 01:02:18 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-25 01:02:18 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-25 01:02:18 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-25 01:02:18 -0400
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2014-09-25 01:02:23 -0400
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"j60rwI7GgQyL6PIBwO4Qh2oPZmhgIUVW4M/WC5c3MSI="}
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-25 01:02:23 -0400
+Processing by WelcomeController#index as HTML
+  [1m[36mMessage Load (0.2ms)[0m  [1mSELECT "messages".* FROM "messages"[0m
+  Rendered welcome/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 78ms (Views: 76.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/general.css?body=1" for 127.0.0.1 at 2014-09-25 01:02:23 -0400
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2014-09-25 01:02:23 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-25 01:02:23 -0400
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-09-25 01:02:23 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-25 01:02:23 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-25 01:02:23 -0400
+
+
+Started GET "/assets/_color_variables.css?body=1" for 127.0.0.1 at 2014-09-25 01:02:23 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-25 01:02:23 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-25 01:02:23 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-25 01:02:23 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-25 01:02:23 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-25 01:02:23 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-25 01:02:23 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-25 01:02:23 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-25 01:04:25 -0400
+Processing by WelcomeController#index as HTML
+  [1m[35mMessage Load (0.3ms)[0m  SELECT "messages".* FROM "messages"
+  Rendered welcome/index.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 98ms (Views: 96.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/general.css?body=1" for 127.0.0.1 at 2014-09-25 01:04:25 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-25 01:04:25 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-25 01:04:25 -0400
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-09-25 01:04:25 -0400
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2014-09-25 01:04:25 -0400
+
+
+Started GET "/assets/_color_variables.css?body=1" for 127.0.0.1 at 2014-09-25 01:04:25 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-25 01:04:25 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-25 01:04:25 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-25 01:04:25 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-25 01:04:25 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-25 01:04:25 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-25 01:04:25 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-25 01:04:25 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-25 01:04:25 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-25 01:04:38 -0400
+Processing by WelcomeController#index as HTML
+  [1m[36mMessage Load (0.2ms)[0m  [1mSELECT "messages".* FROM "messages"[0m
+  Rendered welcome/index.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 181ms (Views: 179.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/_color_variables.css?body=1" for 127.0.0.1 at 2014-09-25 01:04:39 -0400
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-09-25 01:04:39 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-25 01:04:39 -0400
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2014-09-25 01:04:39 -0400
+
+
+Started GET "/assets/general.css?body=1" for 127.0.0.1 at 2014-09-25 01:04:39 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-25 01:04:39 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-25 01:04:39 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-25 01:04:39 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-25 01:04:39 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-25 01:04:39 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-25 01:04:39 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-25 01:04:39 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-25 01:04:39 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-25 01:04:39 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-25 01:04:46 -0400
+Processing by WelcomeController#index as HTML
+  [1m[35mMessage Load (0.2ms)[0m  SELECT "messages".* FROM "messages"
+  Rendered welcome/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 188ms (Views: 186.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/general.css?body=1" for 127.0.0.1 at 2014-09-25 01:04:46 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-25 01:04:46 -0400
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2014-09-25 01:04:46 -0400
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-09-25 01:04:46 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-25 01:04:46 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-25 01:04:46 -0400
+
+
+Started GET "/assets/_color_variables.css?body=1" for 127.0.0.1 at 2014-09-25 01:04:46 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-25 01:04:46 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-25 01:04:46 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-25 01:04:46 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-25 01:04:46 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-25 01:04:46 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-25 01:04:46 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-25 01:04:46 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-25 01:04:51 -0400
+Processing by WelcomeController#index as HTML
+  [1m[36mMessage Load (0.2ms)[0m  [1mSELECT "messages".* FROM "messages"[0m
+  Rendered welcome/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 171ms (Views: 170.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2014-09-25 01:04:51 -0400
+
+
+Started GET "/assets/general.css?body=1" for 127.0.0.1 at 2014-09-25 01:04:51 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-25 01:04:51 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-25 01:04:51 -0400
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-09-25 01:04:51 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-25 01:04:51 -0400
+
+
+Started GET "/assets/_color_variables.css?body=1" for 127.0.0.1 at 2014-09-25 01:04:51 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-25 01:04:51 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-25 01:04:51 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-25 01:04:51 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-25 01:04:51 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-25 01:04:51 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-25 01:04:51 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-25 01:04:51 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-25 01:05:01 -0400
+Processing by WelcomeController#index as HTML
+  [1m[35mMessage Load (0.2ms)[0m  SELECT "messages".* FROM "messages"
+  Rendered welcome/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 181ms (Views: 179.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-25 01:05:01 -0400
+
+
+Started GET "/assets/general.css?body=1" for 127.0.0.1 at 2014-09-25 01:05:01 -0400
+
+
+Started GET "/assets/_color_variables.css?body=1" for 127.0.0.1 at 2014-09-25 01:05:01 -0400
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2014-09-25 01:05:01 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-25 01:05:01 -0400
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-09-25 01:05:01 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-25 01:05:01 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-25 01:05:01 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-25 01:05:01 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-25 01:05:01 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-25 01:05:01 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-25 01:05:01 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-25 01:05:01 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-25 01:05:01 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-25 01:05:09 -0400
+Processing by WelcomeController#index as HTML
+  [1m[36mMessage Load (0.2ms)[0m  [1mSELECT "messages".* FROM "messages"[0m
+  Rendered welcome/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 135ms (Views: 133.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/general.css?body=1" for 127.0.0.1 at 2014-09-25 01:05:09 -0400
+
+
+Started GET "/assets/_color_variables.css?body=1" for 127.0.0.1 at 2014-09-25 01:05:09 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-25 01:05:09 -0400
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2014-09-25 01:05:09 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-25 01:05:09 -0400
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-09-25 01:05:09 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-25 01:05:09 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-25 01:05:09 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-25 01:05:09 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-25 01:05:09 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-25 01:05:09 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-25 01:05:09 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-25 01:05:09 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-25 01:05:09 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-25 01:07:25 -0400
+Processing by WelcomeController#index as HTML
+  [1m[35mMessage Load (0.2ms)[0m  SELECT "messages".* FROM "messages"
+  Rendered welcome/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 187ms (Views: 186.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/_color_variables.css?body=1" for 127.0.0.1 at 2014-09-25 01:07:25 -0400
+
+
+Started GET "/assets/general.css?body=1" for 127.0.0.1 at 2014-09-25 01:07:25 -0400
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2014-09-25 01:07:25 -0400
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-09-25 01:07:25 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-25 01:07:25 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-25 01:07:25 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-25 01:07:25 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-25 01:07:25 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-25 01:07:25 -0400
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-09-25 01:07:25 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-25 01:07:25 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-25 01:07:25 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-25 01:07:25 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-25 01:07:25 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-25 01:07:25 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-25 01:07:47 -0400
+Processing by WelcomeController#index as HTML
+  [1m[36mMessage Load (0.2ms)[0m  [1mSELECT "messages".* FROM "messages"[0m
+  Rendered welcome/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 192ms (Views: 191.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/general.css?body=1" for 127.0.0.1 at 2014-09-25 01:07:47 -0400
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2014-09-25 01:07:47 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-25 01:07:47 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-25 01:07:47 -0400
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-09-25 01:07:47 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-25 01:07:47 -0400
+
+
+Started GET "/assets/_color_variables.css?body=1" for 127.0.0.1 at 2014-09-25 01:07:47 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-25 01:07:47 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-25 01:07:47 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-25 01:07:48 -0400
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-09-25 01:07:48 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-25 01:07:48 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-25 01:07:48 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-25 01:07:48 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-25 01:07:48 -0400
+
+
+Started GET "/assets/_color_variables.css?body=1" for 127.0.0.1 at 2014-09-25 01:07:53 -0400
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-09-25 01:07:53 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-25 01:07:53 -0400
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2014-09-25 01:07:53 -0400
+
+
+Started GET "/assets/general.css?body=1" for 127.0.0.1 at 2014-09-25 01:07:53 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-25 01:07:53 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-25 01:07:53 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-25 01:07:53 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-25 01:08:05 -0400
+Processing by WelcomeController#index as HTML
+  [1m[35mMessage Load (0.6ms)[0m  SELECT "messages".* FROM "messages"
+  Rendered welcome/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 181ms (Views: 179.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/_color_variables.css?body=1" for 127.0.0.1 at 2014-09-25 01:08:05 -0400
+
+
+Started GET "/assets/general.css?body=1" for 127.0.0.1 at 2014-09-25 01:08:05 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-25 01:08:05 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-25 01:08:05 -0400
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2014-09-25 01:08:05 -0400
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-09-25 01:08:05 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-25 01:08:05 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-25 01:08:05 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-25 01:08:05 -0400
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-09-25 01:08:05 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-25 01:08:05 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-25 01:08:06 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-25 01:08:06 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-25 01:08:06 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-25 01:08:06 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-25 01:09:29 -0400
+Processing by WelcomeController#index as HTML
+  [1m[36mMessage Load (0.5ms)[0m  [1mSELECT "messages".* FROM "messages"[0m
+  Rendered welcome/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 192ms (Views: 191.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2014-09-25 01:09:29 -0400
+
+
+Started GET "/assets/general.css?body=1" for 127.0.0.1 at 2014-09-25 01:09:29 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-25 01:09:29 -0400
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-09-25 01:09:29 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-25 01:09:29 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-25 01:09:29 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-25 01:09:29 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-25 01:09:29 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-25 01:09:29 -0400
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-09-25 01:09:29 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-25 01:09:29 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-25 01:09:29 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-25 01:09:29 -0400
+
+
+Started GET "/assets/_color_variables.css?body=1" for 127.0.0.1 at 2014-09-25 01:09:29 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-25 01:09:29 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-25 01:11:23 -0400
+Processing by WelcomeController#index as HTML
+  [1m[35mMessage Load (0.4ms)[0m  SELECT "messages".* FROM "messages"
+  Rendered welcome/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 189ms (Views: 188.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2014-09-25 01:11:24 -0400
+
+
+Started GET "/assets/general.css?body=1" for 127.0.0.1 at 2014-09-25 01:11:24 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-25 01:11:24 -0400
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-09-25 01:11:24 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-25 01:11:24 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-25 01:11:24 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-25 01:11:24 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-25 01:11:24 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-25 01:11:24 -0400
+
+
+Started GET "/assets/_color_variables.css?body=1" for 127.0.0.1 at 2014-09-25 01:11:24 -0400
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-09-25 01:11:24 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-25 01:11:24 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-25 01:11:24 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-25 01:11:24 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-25 01:11:24 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-25 01:11:56 -0400
+Processing by WelcomeController#index as HTML
+  [1m[36mMessage Load (0.5ms)[0m  [1mSELECT "messages".* FROM "messages"[0m
+  Rendered welcome/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 217ms (Views: 215.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/general.css?body=1" for 127.0.0.1 at 2014-09-25 01:11:56 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-25 01:11:56 -0400
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2014-09-25 01:11:56 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-25 01:11:56 -0400
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-09-25 01:11:56 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-25 01:11:56 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-25 01:11:56 -0400
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-09-25 01:11:56 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-25 01:11:56 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-25 01:11:56 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-25 01:11:56 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-25 01:11:56 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-25 01:11:56 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-25 01:11:56 -0400
+
+
+Started GET "/assets/_color_variables.css?body=1" for 127.0.0.1 at 2014-09-25 01:11:56 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-25 01:12:24 -0400
+Processing by WelcomeController#index as HTML
+  [1m[35mMessage Load (0.5ms)[0m  SELECT "messages".* FROM "messages"
+  Rendered welcome/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 191ms (Views: 189.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2014-09-25 01:12:25 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-25 01:12:25 -0400
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-09-25 01:12:25 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-25 01:12:25 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-25 01:12:25 -0400
+
+
+Started GET "/assets/general.css?body=1" for 127.0.0.1 at 2014-09-25 01:12:25 -0400
+
+
+Started GET "/assets/_color_variables.css?body=1" for 127.0.0.1 at 2014-09-25 01:12:25 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-25 01:12:25 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-25 01:12:25 -0400
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-09-25 01:12:25 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-25 01:12:25 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-25 01:12:25 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-25 01:12:25 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-25 01:12:25 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-25 01:12:25 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-25 01:12:30 -0400
+Processing by WelcomeController#index as HTML
+  [1m[36mMessage Load (0.2ms)[0m  [1mSELECT "messages".* FROM "messages"[0m
+  Rendered welcome/index.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 178ms (Views: 177.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/general.css?body=1" for 127.0.0.1 at 2014-09-25 01:12:30 -0400
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-09-25 01:12:30 -0400
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2014-09-25 01:12:30 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-25 01:12:30 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-25 01:12:30 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-25 01:12:30 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-25 01:12:30 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-25 01:12:30 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-25 01:12:30 -0400
+
+
+Started GET "/assets/_color_variables.css?body=1" for 127.0.0.1 at 2014-09-25 01:12:30 -0400
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-09-25 01:12:30 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-25 01:12:30 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-25 01:12:30 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-25 01:12:30 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-25 01:12:30 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-25 01:12:51 -0400
+Processing by WelcomeController#index as HTML
+  [1m[35mMessage Load (0.5ms)[0m  SELECT "messages".* FROM "messages"
+  Rendered welcome/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 190ms (Views: 189.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/general.css?body=1" for 127.0.0.1 at 2014-09-25 01:12:51 -0400
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-09-25 01:12:51 -0400
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2014-09-25 01:12:51 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-25 01:12:51 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-25 01:12:51 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-25 01:12:51 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-25 01:12:51 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-25 01:12:51 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-25 01:12:51 -0400
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-09-25 01:12:51 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-25 01:12:51 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-25 01:12:51 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-25 01:12:51 -0400
+
+
+Started GET "/assets/_color_variables.css?body=1" for 127.0.0.1 at 2014-09-25 01:12:51 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-25 01:12:51 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-25 01:13:15 -0400
+Processing by WelcomeController#index as HTML
+  [1m[36mMessage Load (0.5ms)[0m  [1mSELECT "messages".* FROM "messages"[0m
+  Rendered welcome/index.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 183ms (Views: 182.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/general.css?body=1" for 127.0.0.1 at 2014-09-25 01:13:15 -0400
+
+
+Started GET "/assets/_color_variables.css?body=1" for 127.0.0.1 at 2014-09-25 01:13:15 -0400
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2014-09-25 01:13:15 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-25 01:13:15 -0400
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-09-25 01:13:15 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-25 01:13:15 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-25 01:13:15 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-25 01:13:15 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-25 01:13:15 -0400
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-09-25 01:13:15 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-25 01:13:15 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-25 01:13:15 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-25 01:13:15 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-25 01:13:15 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-25 01:13:15 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-25 01:14:19 -0400
+Processing by WelcomeController#index as HTML
+  [1m[35mMessage Load (0.4ms)[0m  SELECT "messages".* FROM "messages"
+  Rendered welcome/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 222ms (Views: 220.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2014-09-25 01:14:19 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-25 01:14:19 -0400
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-09-25 01:14:19 -0400
+
+
+Started GET "/assets/general.css?body=1" for 127.0.0.1 at 2014-09-25 01:14:19 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-25 01:14:19 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-25 01:14:19 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-25 01:14:19 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-25 01:14:19 -0400
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-09-25 01:14:19 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-25 01:14:19 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-25 01:14:19 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-25 01:14:19 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-25 01:14:19 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-25 01:14:19 -0400
+
+
+Started GET "/assets/_color_variables.css?body=1" for 127.0.0.1 at 2014-09-25 01:14:20 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-25 01:14:38 -0400
+Processing by WelcomeController#index as HTML
+  [1m[36mMessage Load (0.2ms)[0m  [1mSELECT "messages".* FROM "messages"[0m
+  Rendered welcome/index.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 188ms (Views: 186.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2014-09-25 01:14:39 -0400
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-09-25 01:14:39 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-25 01:14:39 -0400
+
+
+Started GET "/assets/general.css?body=1" for 127.0.0.1 at 2014-09-25 01:14:39 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-25 01:14:39 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-25 01:14:39 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-25 01:14:39 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-25 01:14:39 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-25 01:14:39 -0400
+
+
+Started GET "/assets/_color_variables.css?body=1" for 127.0.0.1 at 2014-09-25 01:14:39 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-25 01:14:39 -0400
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-09-25 01:14:39 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-25 01:14:39 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-25 01:14:39 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-25 01:14:39 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-25 01:14:46 -0400
+Processing by WelcomeController#index as HTML
+  [1m[35mMessage Load (0.6ms)[0m  SELECT "messages".* FROM "messages"
+  Rendered welcome/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 188ms (Views: 186.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/general.css?body=1" for 127.0.0.1 at 2014-09-25 01:14:46 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-25 01:14:46 -0400
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-09-25 01:14:46 -0400
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2014-09-25 01:14:46 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-25 01:14:46 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-25 01:14:46 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-25 01:14:46 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-25 01:14:46 -0400
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-09-25 01:14:46 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-25 01:14:46 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-25 01:14:46 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-25 01:14:46 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-25 01:14:46 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-25 01:14:46 -0400
+
+
+Started GET "/assets/_color_variables.css?body=1" for 127.0.0.1 at 2014-09-25 01:14:46 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-25 01:14:50 -0400
+Processing by WelcomeController#index as HTML
+  [1m[36mMessage Load (0.2ms)[0m  [1mSELECT "messages".* FROM "messages"[0m
+  Rendered welcome/index.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 200ms (Views: 198.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/_color_variables.css?body=1" for 127.0.0.1 at 2014-09-25 01:14:51 -0400
+
+
+Started GET "/assets/general.css?body=1" for 127.0.0.1 at 2014-09-25 01:14:51 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-25 01:14:51 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-25 01:14:51 -0400
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2014-09-25 01:14:51 -0400
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-09-25 01:14:51 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-25 01:14:51 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-25 01:14:51 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-25 01:14:51 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-25 01:14:51 -0400
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-09-25 01:14:51 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-25 01:14:51 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-25 01:14:51 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-25 01:14:51 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-25 01:14:51 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-25 01:14:53 -0400
+Processing by WelcomeController#index as HTML
+  [1m[35mMessage Load (0.2ms)[0m  SELECT "messages".* FROM "messages"
+  Rendered welcome/index.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 102ms (Views: 101.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/general.css?body=1" for 127.0.0.1 at 2014-09-25 01:14:53 -0400
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2014-09-25 01:14:53 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-25 01:14:53 -0400
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-09-25 01:14:53 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-25 01:14:53 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-25 01:14:53 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-25 01:14:53 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-25 01:14:53 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-25 01:14:53 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-25 01:14:53 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-25 01:14:53 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-25 01:14:53 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-25 01:14:53 -0400
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-09-25 01:14:53 -0400
+
+
+Started GET "/assets/_color_variables.css?body=1" for 127.0.0.1 at 2014-09-25 01:14:53 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-25 01:14:57 -0400
+Processing by WelcomeController#index as HTML
+  [1m[36mMessage Load (0.2ms)[0m  [1mSELECT "messages".* FROM "messages"[0m
+  Rendered welcome/index.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 167ms (Views: 165.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-09-25 01:14:57 -0400
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2014-09-25 01:14:57 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-25 01:14:57 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-25 01:14:57 -0400
+
+
+Started GET "/assets/general.css?body=1" for 127.0.0.1 at 2014-09-25 01:14:57 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-25 01:14:57 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-25 01:14:57 -0400
+
+
+Started GET "/assets/_color_variables.css?body=1" for 127.0.0.1 at 2014-09-25 01:14:57 -0400
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-09-25 01:14:57 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-25 01:14:57 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-25 01:14:57 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-25 01:14:57 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-25 01:14:57 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-25 01:14:57 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-25 01:14:57 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-25 01:15:39 -0400
+Processing by WelcomeController#index as HTML
+  [1m[35mMessage Load (0.2ms)[0m  SELECT "messages".* FROM "messages"
+  Rendered welcome/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 96ms (Views: 94.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/general.css?body=1" for 127.0.0.1 at 2014-09-25 01:15:39 -0400
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-09-25 01:15:39 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-25 01:15:39 -0400
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2014-09-25 01:15:39 -0400
+
+
+Started GET "/assets/_color_variables.css?body=1" for 127.0.0.1 at 2014-09-25 01:15:39 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-25 01:15:39 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-25 01:15:39 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-25 01:15:39 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-25 01:15:39 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-25 01:15:39 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-25 01:15:39 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-25 01:15:39 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-25 01:15:39 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-25 01:15:39 -0400
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-09-25 01:15:39 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-25 01:17:54 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  [1m[35mMessage Load (0.5ms)[0m  SELECT "messages".* FROM "messages"
+  Rendered welcome/index.html.erb within layouts/application (14.9ms)
+Completed 200 OK in 303ms (Views: 228.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/_color_variables.css?body=1" for 127.0.0.1 at 2014-09-25 01:17:55 -0400
+
+
+Started GET "/assets/general.css?body=1" for 127.0.0.1 at 2014-09-25 01:17:55 -0400
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-09-25 01:17:55 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-25 01:17:55 -0400
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2014-09-25 01:17:55 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-25 01:17:55 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-25 01:17:55 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-25 01:17:55 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-25 01:17:55 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-25 01:17:55 -0400
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-09-25 01:17:55 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-25 01:17:55 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-25 01:17:55 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-25 01:17:55 -0400
+
+
+Started GET "/uploads/message/picture/1/mini_castle2.jpg" for 127.0.0.1 at 2014-09-25 01:17:55 -0400
+
+ActionController::RoutingError (No route matches [GET] "/uploads/message/picture/1/mini_castle2.jpg"):
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/justinwagner/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/justinwagner/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/justinwagner/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/justinwagner/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/justinwagner/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.4ms)
+  Rendered /Users/justinwagner/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (26.3ms)
+  Rendered /Users/justinwagner/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (127.2ms)
+
+
+Started GET "/uploads/message/picture/2/mini_bioshock.jpg" for 127.0.0.1 at 2014-09-25 01:17:55 -0400
+
+ActionController::RoutingError (No route matches [GET] "/uploads/message/picture/2/mini_bioshock.jpg"):
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/justinwagner/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/justinwagner/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/justinwagner/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/justinwagner/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/justinwagner/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.3ms)
+  Rendered /Users/justinwagner/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered /Users/justinwagner/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (44.9ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-25 01:17:55 -0400
+
+
+Started GET "/uploads/message/picture/3/mini_illust.jpg" for 127.0.0.1 at 2014-09-25 01:17:55 -0400
+
+ActionController::RoutingError (No route matches [GET] "/uploads/message/picture/3/mini_illust.jpg"):
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/justinwagner/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/justinwagner/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/justinwagner/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/justinwagner/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/justinwagner/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.5ms)
+  Rendered /Users/justinwagner/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered /Users/justinwagner/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (46.7ms)
+
+
+Started GET "/uploads/message/picture/4/mini_pacman.jpg" for 127.0.0.1 at 2014-09-25 01:17:55 -0400
+
+ActionController::RoutingError (No route matches [GET] "/uploads/message/picture/4/mini_pacman.jpg"):
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/justinwagner/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/justinwagner/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/justinwagner/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/justinwagner/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/justinwagner/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.8ms)
+  Rendered /Users/justinwagner/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /Users/justinwagner/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (37.3ms)
+
+
+Started GET "/uploads/message/picture/2/mini_bioshock.jpg" for 127.0.0.1 at 2014-09-25 01:17:55 -0400
+
+ActionController::RoutingError (No route matches [GET] "/uploads/message/picture/2/mini_bioshock.jpg"):
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/justinwagner/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/justinwagner/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/justinwagner/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/justinwagner/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /Users/justinwagner/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.6ms)
+  Rendered /Users/justinwagner/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+  Rendered /Users/justinwagner/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (45.7ms)
+
+
+Started GET "/uploads/message/picture/1/mini_castle2.jpg" for 127.0.0.1 at 2014-09-25 01:17:55 -0400
+
+ActionController::RoutingError (No route matches [GET] "/uploads/message/picture/1/mini_castle2.jpg"):
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/justinwagner/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/justinwagner/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/justinwagner/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/justinwagner/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/justinwagner/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (7.2ms)
+  Rendered /Users/justinwagner/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (57.3ms)
+  Rendered /Users/justinwagner/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (98.8ms)

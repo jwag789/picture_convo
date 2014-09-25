@@ -6,4 +6,7 @@
 <%= link_to "Create Conversation", new_conversation_path %>
 <% end %>
 
+<% @messages.each do |message| %>
+	<div class="mini"><%= image_tag message.picture_url(:mini).to_s %></div>
+<% end %>
 
