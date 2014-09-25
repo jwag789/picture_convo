@@ -1,4 +1,5 @@
 @import 'color_variables';
+@import url(http://fonts.googleapis.com/css?family=Ubuntu+Condensed);
 
 nav {
 	background: $dark-grey;
@@ -28,6 +29,8 @@ nav li, nav li h2 {
 	color: $turq;
 	display: inline;
 	padding: 10px;
+	font-family: 'Ubuntu Condensed', sans-serif;
+	z-index: 5;
 }
 
 nav a, nav a:visited {

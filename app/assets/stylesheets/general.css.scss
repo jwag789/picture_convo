@@ -1,16 +1,29 @@
 @import 'color_variables';
+@import url(http://fonts.googleapis.com/css?family=Signika+Negative:300,400,600);
 
 body {
 	background: $off-white;
 }
 
 .container {
-	background: $dark-grey;
+	background: $off-white;
 	min-height: 500px;
 	margin: 20px;
-	border-radius: 10px;
 	padding: 30px;
-	color: $off-white;
+	color: $dark-grey;
+	font-family: 'Signika Negative', sans-serif;
+	font-weight: 200;
+
+  h1 {
+    font-size: 60px;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 20px;
+    text-align: center;
+  }
+
 }
 
 .container a, .container a:visited {
