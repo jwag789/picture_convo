@@ -14,6 +14,6 @@ class MessagesController < ApplicationController
 
 	private
 	def message_params
-		params.require(:message).permit(:comment, :picture)
+		params.require(:message).permit(:comment, :picture, :remote_picture_url)
 	end
 end
