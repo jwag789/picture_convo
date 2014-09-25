@@ -31,7 +31,7 @@
 <% end %> 
 
 <% @conversation.messages.each do |message| %>
-	<%= image_tag message.picture_url.to_s %>
+	<%= image_tag message.picture_url(:thumb).to_s %>
 	<%= message.comment %>
 	<br>
 <% end %>
