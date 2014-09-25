@@ -8,19 +8,27 @@
 </head>
 <body>
 	<nav>
-    <h2>PictureConvo</h2>
-    <ul>
-      <li><%= link_to 'Home', root_path %></li>
+
+    <div class="left">
+        <li><h2>PictureConvo</h2></li>
+        <li><%= link_to 'Home', root_path %></li>
+    </div>
+
+      
+
+    <div class="right">
       <% if session[:user_id] %>
       <li> <%= link_to 'Logout', logout_path, method: :delete %></li>
       <% else %>
       <li><%= link_to 'Login', login_path %></li>
       <li> <%= link_to 'Signup', signup_path %></li>
       <% end %>
-    </ul>
+  </div>
   </nav>
 
+<div class="container">
 <%= yield %>
+</div>
 
 </body>
 </html>

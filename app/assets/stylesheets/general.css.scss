@@ -1,0 +1,18 @@
+@import 'color_variables';
+
+body {
+	background: $off-white;
+}
+
+.container {
+	background: $dark-grey;
+	min-height: 500px;
+	margin: 20px;
+	border-radius: 10px;
+	padding: 30px;
+	color: $off-white;
+}
+
+.container a, .container a:visited {
+	color: $turq;
+}

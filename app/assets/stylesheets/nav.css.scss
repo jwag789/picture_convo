@@ -1,0 +1,36 @@
+@import 'color_variables';
+
+nav {
+	background: $dark-grey;
+	height: 50px;
+}
+
+.left {
+  position: relative;
+  top: 15px;
+  left: 20px;
+  text-align: left;
+  width: auto;
+  display: inline;
+}
+
+.right {
+  position: relative;
+  top: 15px;
+  right: 20px;
+  width: auto;
+  float: right;
+  display: inline;
+}
+
+
+nav li, nav li h2 {
+	color: $turq;
+	display: inline;
+	padding: 10px;
+}
+
+nav a, nav a:visited {
+	color: $turq;
+	text-decoration: none;
+}
